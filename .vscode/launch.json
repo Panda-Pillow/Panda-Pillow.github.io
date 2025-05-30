@@ -3,22 +3,10 @@
     "configurations": [
         {
             "name": "Jekyll Serve",
-            "type": "node",
+            "type": "node-terminal",
             "request": "launch",
-            "program": "${workspaceFolder}",
-            "console": "integratedTerminal",
-            "runtimeExecutable": "/bin/zsh",
-            "runtimeArgs": ["-c", "source ~/.zshrc && bundle exec jekyll serve --livereload --drafts"],
-            "env": {
-                "BUNDLE_GEMFILE": "${workspaceFolder}/Gemfile",
-                "PATH": "${env:HOME}/.rbenv/shims:${env:HOME}/.rbenv/bin:${env:PATH}"
-            },
-            "presentation": {
-                "echo": true,
-                "reveal": "always",
-                "focus": false,
-                "panel": "new"
-            }
-        }
+            "command": "bundle exec jekyll serve --livereload --drafts",
+            "cwd": "${workspaceFolder}"
+        },
     ]
 }
