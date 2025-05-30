@@ -1,0 +1,80 @@
+<!-- Mermaid.js 지원 -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'default',
+      securityLevel: 'loose',
+      fontFamily: 'inherit',
+      fontSize: 16,
+      flowchart: {
+        useMaxWidth: true,
+        htmlLabels: true,
+        curve: 'cardinal'
+      },
+      sequence: {
+        useMaxWidth: true,
+        actorMargin: 50,
+        width: 150,
+        height: 65,
+        boxMargin: 10,
+        boxTextMargin: 5,
+        noteMargin: 10,
+        messageMargin: 35
+      },
+      gantt: {
+        useMaxWidth: true,
+        leftPadding: 75,
+        gridLineStartPadding: 35,
+        fontSize: 11,
+        sectionFontSize: 11,
+        numberSectionStyles: 3
+      }
+    });
+    
+    // 모든 mermaid 코드 블록을 찾아서 렌더링
+    const mermaidBlocks = document.querySelectorAll('code.language-mermaid');
+    mermaidBlocks.forEach((block, index) => {
+      const mermaidDiv = document.createElement('div');
+      mermaidDiv.className = 'mermaid';
+      mermaidDiv.textContent = block.textContent;
+      mermaidDiv.id = 'mermaid-' + index;
+      
+      block.parentNode.replaceWith(mermaidDiv);
+    });
+  });
+</script>
+
+<style>
+  .mermaid {
+    text-align: center;
+    margin: 2rem 0;
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .mermaid svg {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* 다크모드 지원 */
+  @media (prefers-color-scheme: dark) {
+    .mermaid {
+      background: #2d3748;
+      color: #e2e8f0;
+    }
+  }
+  
+  /* 모바일 최적화 */
+  @media (max-width: 768px) {
+    .mermaid {
+      margin: 1rem -1rem;
+      border-radius: 0;
+      font-size: 14px;
+    }
+  }
+</style>
