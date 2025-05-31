@@ -50,7 +50,7 @@ which npx
 # 그 다음 설정에서 전체 경로 사용
 ```
 
-개인적으로는 chown 방식이 가장 간단하고 확실했다.
+개인적으로는 chown 방식이 가장 간단하고 확실했다. [참고 - 대화 내역](https://claude.ai/share/cf623d97-7db7-4f30-bef2-cf24c8edf6ba)
 
 ## 2. cursor-talk-to-figma MCP: 실제 설정법
 

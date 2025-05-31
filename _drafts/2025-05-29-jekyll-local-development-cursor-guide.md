@@ -6,6 +6,12 @@ published: false
 toc: true
 ---
 
+참고:
+- https://claude.ai/share/2f3c4b7d-4950-41f3-bff7-e29a4d38c72e
+- https://claude.ai/share/35960f1d-ee85-4530-bde1-d21fc7c4a9fa
+
+
+
 [이전 글](./github-pages-jekyll-mmistakes-설치가이드)에서 GitHub Pages와 Jekyll을 설치했다. GitHub Actions로 자동 배포되는 건 좋지만, `published: false`로 설정한 임시저장 글은 실제 사이트에 전혀 나타나지 않는다. 
 
 글이 어떻게 보일지 미리 확인할 방법이 없어서 결국 로컬에서 Jekyll을 직접 실행해야 했다. rbenv로 Ruby 환경을 구축하고 Cursor에서 단축키로 바로 실행하는 방법까지 정리한다.
