@@ -9,7 +9,7 @@ tags:
   - MCP
   - Node.js
   - Bun
-date: 2025-05-31 11:46:00 +0900
+date: 2025-05-31
 last_modified_at: 2025-05-31
 toc: true
 toc_sticky: true
@@ -47,12 +47,18 @@ https://nodejs.org/
 }
 ```
 
-**중요**: 여기서 EACCESS 에러가 나면 Node.js 권한 문제다. 이때는 npx 대신 전체 경로를 사용한다.
+**중요**: 여기서 EACCESS 에러가 나면 Node.js 권한 문제다. 두 가지 해결법이 있다.
 
 ```bash
-# npx 위치 확인
+# 방법 1: npm 글로벌 디렉토리 소유권 변경 (chown 방식)
+sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
+
+# 방법 2: npx 전체 경로 사용
 which npx
+# 그 다음 설정에서 전체 경로 사용
 ```
+
+개인적으로는 chown 방식이 가장 간단하고 확실했다.
 
 ## 2. cursor-talk-to-figma MCP: 실제 설정법
 
