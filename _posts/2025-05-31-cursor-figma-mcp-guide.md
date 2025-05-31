@@ -1,14 +1,6 @@
 ---
 title: "Cursor Talk to Figma MCP 연결하기: 실전 해결 가이드"
 excerpt: "공식 문서만으로는 해결되지 않는 MCP 설정 문제들과 실제 작동하는 해결법을 정리했다."
-categories:
-  - Development
-tags:
-  - Cursor
-  - Figma
-  - MCP
-  - Node.js
-  - Bun
 date: 2025-05-31 11:46:00 +0900
 last_modified_at: 2025-05-31 12:03:00 +0900
 toc: true

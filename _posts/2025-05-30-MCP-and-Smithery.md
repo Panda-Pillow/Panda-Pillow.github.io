@@ -1,7 +1,10 @@
 ---
 title: "MCP(Model Context Protocol), 그리고 Smithery란?"
-date: 2025-05-31 15:30:00 +0900
+excerpt: "AI 도구 확장의 새로운 표준 MCP와 함께 자주 언급되는 Smithery 레지스트리에 대해 알아본다. 실제 사용 경험을 바탕으로 Smithery CLI의 한계와 추천 방법을 제시한다."
+date: 2025-05-30 14:13:40 +0900
+last_modified_at: 2025-05-31 12:03:00 +0900
 description: "AI 도구 확장의 새로운 표준 MCP와 함께 자주 언급되는 Smithery 레지스트리에 대해 알아본다."
+published: true
 ---
 
 ## MCP(Model Context Protocol)란?
