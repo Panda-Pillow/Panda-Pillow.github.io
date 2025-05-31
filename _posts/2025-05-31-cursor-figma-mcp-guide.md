@@ -9,8 +9,8 @@ tags:
   - MCP
   - Node.js
   - Bun
-date: 2025-05-31
-last_modified_at: 2025-05-31
+date: 2025-05-31 11:46:00 +0900
+last_modified_at: 2025-05-31 12:03:00 +0900
 toc: true
 toc_sticky: true
 ---
